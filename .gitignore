@@ -1,0 +1,109 @@
+# Arquivos e diretórios específicos do Visual Studio
+.vs/
+bin/
+obj/
+
+# Arquivos gerados automaticamente
+*.user
+*.vscode
+*.vsconfig
+*.suo
+*.cache
+*.log
+*.bak
+
+# Pacotes NuGet
+*.nuget.props
+*.lock
+*.nuget.targets
+
+# Pasta de publicação
+publish/
+
+# Arquivos de compilação e saída
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.tmp
+*.log
+
+# Arquivos de configuração
+*.config
+*.config.user
+
+# Arquivos de build e logs
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.cache
+*.log
+
+# Arquivos do Visual Studio
+.vscode/
+.vs/
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.ide/
+*.sln.ide-shadow/
+*.suo
+*.usertasks
+*.userprefs
+
+# Arquivos de compilação
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_i.obj
+*_p.obj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Arquivos de análise e profiling
+*.suo
+*.user
+*.sln.docstates
+*.pdb
+*.opendb
+
+# Diretórios específicos do Rider
+.idea/
+.idea/
+
+# Diretórios específicos do Visual Studio Code
+.vscode/
