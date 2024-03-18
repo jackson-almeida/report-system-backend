@@ -1,0 +1,6 @@
+@sistema_relatorios_HostAddress = http://localhost:5097
+
+GET {{sistema_relatorios_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
