@@ -24,14 +24,12 @@ namespace sistema_relatorios.Controllers
         {
             if (ModelState.IsValid)
             {
-                //var users = _context.User.ToList();
                 var users = _context.User
                     .Select(u => new
                     {
                         u.Id,
                         u.Name,
                         u.Email
-                        // Inclua apenas as propriedades que você deseja retornar
                     })
                     .ToList();
 
@@ -99,7 +97,7 @@ namespace sistema_relatorios.Controllers
             {
                 string token = TokenGenerator.GenerateToken(userModel.Email);
 
-                return Ok(token);
+                return Ok(new { Token = token });
             }
             else
             {
