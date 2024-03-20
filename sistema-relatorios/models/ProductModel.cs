@@ -1,10 +1,18 @@
-﻿namespace sistema_relatorios.models
+﻿using sistema_relatorios.models;
+using System.ComponentModel.DataAnnotations;
+
+namespace sistema_relatorios.models
 {
     public class ProductModel
     {
-        private string Code {  get; set; }
-        private string Name { get; set; }
-        private double CustPrice { get; set; }
-        private double Markup { get; set; }
+        [Key]
+        public int Code {  get; set; }
+        public string Name { get; set; }
+        public double CustPrice { get; set; }
+        public double Markup { get; set; }
+        public double CustSale { get; set; }
+        public double RealMargin { get; set; }
+        public int TaxRuleCode { get; set; }
+        //public TaxRuleModel TaxRule { get; set; }
     }
 }

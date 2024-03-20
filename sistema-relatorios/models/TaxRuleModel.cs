@@ -1,10 +1,14 @@
-﻿namespace sistema_relatorios.models
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace sistema_relatorios.models
 {
-    public class TaskModel
+    public class TaxRuleModel
     {
-        public int id { get; set; }
-        public string? Name { get; set; }
-        public string? Description { get; set; }
-        public int Status { get; set; }
+        [Key]
+        public int? Code { get; set; }
+        public string Name { get; set; }
+        public double Rate { get; set; }
+        
     }
 }

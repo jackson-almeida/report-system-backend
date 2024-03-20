@@ -6,8 +6,8 @@ namespace sistema_relatorios.database
     public class ApplicationDbContext : DbContext
     {
         public DbSet<UserModel> User { get; set; }
-        //public DbSet<ProductModel> TaxRule { get; set; }
-        //public DbSet<Produto> Produtos { get; set; }
+        public DbSet<ProductModel> Product { get; set; }
+        public DbSet<TaxRuleModel> TaxRule { get; set; }
 
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -15,6 +15,5 @@ namespace sistema_relatorios.database
         {
         
         }
-
     }
 }

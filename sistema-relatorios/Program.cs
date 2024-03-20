@@ -38,6 +38,8 @@ namespace sistema_relatorios
             app.MapControllers();
 
             app.MapControllerRoute(name: "default", pattern: "{controller=UserController}/{action=Index}/{id?}");
+            app.MapControllerRoute(name: "default", pattern: "{controller=TaxRuleController}/{action=Index}/{id?}");
+            app.MapControllerRoute(name: "default", pattern: "{controller=ProductController}/{action=Index}/{id?}");
 
             app.Run();
         }
